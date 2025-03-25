@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0000ff">
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="HỌC SINH LỚP 1"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.Toolbar>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:text="HS viết:"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="4dp"
+        android:id="@+id/editStudentText"
+        android:gravity="top|start"
+        android:textAlignment="viewStart"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#DDDDDD"
+        android:textCursorDrawable="@color/black"
+        android:textColor="@color/black"/>
+        />
+    <TextView
+        android:layout_marginTop="16dp"
+        android:text="Cô giáo sửa:"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="4dp"
+        android:id="@+id/editTeacherText"
+        android:gravity="top|start"
+        android:textAlignment="viewStart"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#DDDDDD"
+        android:enabled="false"
+        android:textColor="@color/black"/>
+        />
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnSubmit"
+        android:text="Nộp Bài"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+</LinearLayout>
+
