@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blue">#2196F3</color>
+    <color name="normal_color">#1976D2</color> <!-- Màu xanh dương -->
+    <color name="pressed_color">#63A4FF</color> <!-- Màu nhạt hơn khi nhấn -->
+    <color name="disabled_color">#B0BEC5</color> <!-- Màu xám khi bị disable -->
+
 </resources>
