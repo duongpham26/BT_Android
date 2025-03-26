@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         editStudentText = findViewById(R.id.editStudentText);
         editTeacherText = findViewById(R.id.editTeacherText);
         btnSubmit = findViewById(R.id.btnSubmit);
-
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
