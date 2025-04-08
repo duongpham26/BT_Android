@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#ecf0f1"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:background="#D3D3D3"
+        >
+
+        <!-- Biểu thức -->
+        <TextView
+            android:id="@+id/expressionView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="start|top"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:text=""
+            android:padding="4dp" />
+
+        <!-- Dòng hiển thị dấu "=" và kết quả -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Dấu "=" bên trái -->
+            <TextView
+                android:id="@+id/equalSignView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="="
+                android:textSize="28sp"
+                android:textColor="#000000"
+                android:padding="4dp" />
+
+            <!-- Kết quả bên phải -->
+            <TextView
+                android:id="@+id/resultView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text=""
+                android:textSize="28sp"
+                android:textColor="#000000"
+                android:padding="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:alignmentMode="alignMargins"
+        android:padding="8dp">
+
+        <!-- Hàng 0 -->
+        <Button
+            android:id="@+id/button7"
+            android:text="7"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="@drawable/selector"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"/>
+        <Button
+            android:id="@+id/button8"
+            android:text="8"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@drawable/selector"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"/>
+        <Button android:id="@+id/button9" android:text="9"
+            android:layout_row="0" android:layout_column="2" android:background="@drawable/selector"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"
+            />
+        <Button android:id="@+id/buttondiv" android:text="/"
+            android:layout_row="0" android:layout_column="3"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"
+            android:background="@drawable/operator_selector"/>
+
+        <!-- Hàng 1 -->
+        <Button
+            android:id="@+id/button4"
+            android:text="4"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@drawable/selector"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"/>
+        <Button android:id="@+id/button5" android:text="5"
+            android:layout_row="1" android:layout_column="1"
+            android:background="@drawable/selector"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"/>
+        <Button android:id="@+id/button6" android:text="6"
+            android:layout_row="1" android:layout_column="2"
+            android:background="@drawable/selector"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"/>
+        <Button android:id="@+id/buttonmul" android:text="x"
+            android:layout_row="1" android:layout_column="3"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"
+            android:background="@drawable/operator_selector"/>
+
+        <!-- Hàng 2 -->
+        <Button android:id="@+id/button1" android:text="1"
+            android:layout_row="2" android:layout_column="0"
+            android:background="@drawable/selector"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"/>
+        <Button android:id="@+id/button2" android:text="2"
+            android:layout_row="2" android:layout_column="1"
+            android:background="@drawable/selector"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"/>
+        <Button android:id="@+id/button3" android:text="3"
+            android:layout_row="2" android:layout_column="2"
+            android:background="@drawable/selector"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"/>
+        <Button android:id="@+id/buttonsub" android:text="-"
+            android:layout_row="2" android:layout_column="3"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"
+            android:background="@drawable/operator_selector"/>
+
+        <!-- Hàng 3 -->
+        <Button android:id="@+id/buttonDot" android:text="."
+            android:layout_row="3" android:layout_column="0"
+            android:background="@drawable/selector"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"/>
+        <Button android:id="@+id/button0" android:text="0"
+            android:layout_row="3" android:layout_column="1"
+            android:background="@drawable/selector"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"/>
+        <Button android:id="@+id/Remainder" android:text="%"
+            android:layout_row="3" android:layout_column="2"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"
+            android:background="@drawable/operator_selector"/>
+        <Button android:id="@+id/buttonadd" android:text="+"
+            android:layout_row="3" android:layout_column="3"
+            android:layout_margin="1dp"
+            android:textColor="#ecf0f1"
+            android:textSize="30sp"
+            android:background="@drawable/operator_selector"/>
+
+        <!-- Hàng 4 -->
+        <Button
+            android:id="@+id/buttonDel"
+            android:layout_width="180dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_margin="1dp"
+            android:background="@drawable/button"
+            android:text="DEL"
+            android:textColor="#ecf0f1"
+
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttoneql"
+            android:layout_width="180dp"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_columnSpan="2"
+            android:layout_margin="1dp"
+            android:background="@drawable/button"
+            android:text="="
+            android:textColor="#ecf0f1"
+            android:textSize="30sp" />
+    </GridLayout>
+
+</LinearLayout>
